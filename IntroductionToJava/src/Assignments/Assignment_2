@@ -2,34 +2,34 @@ package assignments;
 
 import java.util.Scanner;
 
-public class Assignment_10 {
-
-	public static void var_swap(int x,int y) 
-	{
-		int z = 0;
-		z = x;
-		x = y;
-		y = z;
-		
-		System.out.println("Swapped Numbers by 3rd variable are :"+x+" "+y);
-	}
-	public static void no_var_swap(int u,int v) 
-	{
-		//swap(int u,int v);
-		u = u+v;
-		v = u-v;
-		u = u-v;
-			System.out.println("your swapped numbers withpout 3rd variable are :"+u+" "+v);
-	}
+public class Assignment_2 {
+	
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("enter 2 number respectively");
-		int a = sc.nextInt();
-		int b = sc.nextInt();
-		System.out.println("your numbers are :"+a+" "+b);
+	Scanner sc = new Scanner(System.in);
+	int a,b,c;
+	System.out.println("Enter the first number :");
+	a = sc.nextInt();
+	
+	System.out.println("Enter the Second number :");
+	b = sc.nextInt();
+	
+	System.out.println("Enter the Third number :");
+	c = sc.nextInt();
+	
+	if(a==b && b==c && c==a)
+	{
+		System.out.println("all beings are equal");
 		
-		Assignment_10.var_swap(a,b);
-		Assignment_10.no_var_swap(a,b);
+	}else if(a==b || b==c) {
+		
+System.out.println("Well some beings are equal");
+		
+	}else if(c==a) {
+		
+		System.out.println("Well some beings are equal");
+	}
+	
+	
 	}
 
 }
