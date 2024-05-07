@@ -1,1 +1,22 @@
+package assignments;
+
+import java.util.Scanner;
+
+public class Assignment_1 {
+
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter the Name :");
+	String name = sc.next();
+	
+	System.out.println("Enter Roll Number :");
+	int roll = sc.nextInt();
+	
+	System.out.println("Enter his/her field of interest :");
+	String hob = sc.next();
+	
+	System.out.println("Hey, My name is "+name+" and my roll number is "+roll+". My field of interest is "+hob);
+	
+	}
+}
 
