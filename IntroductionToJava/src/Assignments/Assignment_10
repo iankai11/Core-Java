@@ -1,0 +1,35 @@
+package assignments;
+
+import java.util.Scanner;
+
+public class Assignment_10 {
+
+	public static void var_swap(int x,int y) 
+	{
+		int z = 0;
+		z = x;
+		x = y;
+		y = z;
+		
+		System.out.println("Swapped Numbers by 3rd variable are :"+x+" "+y);
+	}
+	public static void no_var_swap(int u,int v) 
+	{
+		//swap(int u,int v);
+		u = u+v;
+		v = u-v;
+		u = u-v;
+			System.out.println("your swapped numbers withpout 3rd variable are :"+u+" "+v);
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter 2 number respectively");
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		System.out.println("your numbers are :"+a+" "+b);
+		
+		Assignment_10.var_swap(a,b);
+		Assignment_10.no_var_swap(a,b);
+	}
+
+}
