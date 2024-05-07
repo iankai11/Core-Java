@@ -1,0 +1,25 @@
+package com.apr29;
+
+import java.util.Scanner;
+
+public class AREA {
+
+	public static void main(String[] args) {
+		Scanner g=new Scanner(System.in);
+		System.out.println("Enter Length: ");
+		
+		double l=g.nextDouble();
+		
+				
+        System.out.println("Enter BREDTH: ");
+		
+		double b=g.nextDouble();
+		
+        System.out.println("area: \n");
+        System.out.println(l*b);
+		
+		
+		
+		
+	}
+}
