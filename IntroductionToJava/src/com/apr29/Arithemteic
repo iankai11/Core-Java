@@ -1,0 +1,13 @@
+package com.apr29;
+
+public class Arithemteic {
+
+	public static void main(String[] args) {
+	
+		int a= 3,b= 6;
+		
+		
+		System.out.print(a+b);
+
+		}
+	}
