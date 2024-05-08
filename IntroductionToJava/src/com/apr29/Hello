@@ -1,0 +1,13 @@
+package com.apr29;
+
+public class Hello {
+
+	public static void main(String[] args) {
+		
+
+		System.out.println("Hello World!!!\nGood Morning");
+		System.out.println("How r u??");
+		System.out.println("  I AM GOOD");
+	}
+
+}
