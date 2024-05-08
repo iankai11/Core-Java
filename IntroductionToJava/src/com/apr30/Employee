@@ -1,0 +1,52 @@
+package com.apr30;
+
+import java.util.Scanner;
+
+public class Employee {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Press 1: Enter Employee Name");
+		System.out.println("Press 2: Enter Employee Address");
+		System.out.println("Press 3: Enter Employee Contact");
+		System.out.println("Press 4: Enter Employee Designation");
+		System.out.println("Press 5: Enter Employee Salary");
+		
+		System.out.println("enter your Choice: ");
+		int ch = sc.nextInt();
+		
+		
+		switch(ch) {
+		       
+		case 1:
+			String name=sc.next();
+			System.out.println("Employee Name :"+name);
+ 		break;
+ 		
+		case 2:
+			String address=sc.next();
+			System.out.println("Employee Address :"+address);
+ 		break;
+ 		
+		case 3:
+			long contact=sc.nextLong();
+			System.out.println("Employee Contact :"+contact);
+ 		break;
+ 		
+		case 4:
+			String designation=sc.next();
+			System.out.println(" Employee Designation :"+designation);
+ 		break;
+ 		
+		case 5:
+			int salary=sc.nextInt();
+			System.out.println("Employee Salary :"+salary);
+ 		break;
+ 		
+ 		default:
+ 			System.out.println("x_x");
+		}
+
+	}
+}
