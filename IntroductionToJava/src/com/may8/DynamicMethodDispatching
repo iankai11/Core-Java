@@ -1,0 +1,51 @@
+package com.may8;
+	
+class Mobile
+	{
+		void disp()
+		{
+			System.out.println("This is mobile OS!");
+		}
+		
+	}
+	
+class Android extends Mobile
+	{
+		void disp()
+		{
+			super.disp();
+			System.out.println("This is Android OS!");
+		}
+		
+	}
+	
+class Ios extends Mobile
+	{
+		void disp()
+		{
+			System.out.println("This is Ios OS!");
+		}
+		
+	}
+
+	public class DynamicMethodDispatching
+	{
+    public static void main(String[] args)	
+    {
+    	Mobile m1,m2;
+    	m1 = new Android();
+    	m1.disp();
+    	m2 = new Ios();
+    	m2.disp();
+    	m1 = new Android();
+    	m1.disp();
+    	m1 = new Ios();
+    	m1.disp();
+    	
+    	
+    }
+	
+	}
+
+
+
