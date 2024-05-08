@@ -1,0 +1,26 @@
+package com.apr29;
+
+import java.util.Scanner;
+
+public class Jio {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter your name");
+		
+		String a = sc.next();
+		
+		System.out.println("Enter your age");
+		
+		int c = sc.nextInt();
+		
+		System.out.println("Enter your address");
+		
+		String b = sc.next();
+		
+	System.out.println(a+b+c);
+
+	}
+
+}
