@@ -1,0 +1,26 @@
+package com.apr29;
+
+import java.util.Scanner;
+
+public class ScannerDemo {
+
+	public static void main(String[] args) {
+		Scanner g=new Scanner(System.in);
+		System.out.println("Enter Name: ");
+		
+		String name=g.next();
+				
+        System.out.println("Enter Address: ");
+		
+		String address=g.next();
+		
+        System.out.println("Enter Age: ");
+		
+		int age=g.nextInt();
+		
+		System.out.println(name+" "+address+" "+age);
+		
+		
+	}
+
+}
