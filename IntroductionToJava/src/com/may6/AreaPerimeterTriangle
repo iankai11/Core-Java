@@ -1,0 +1,29 @@
+package com.may6;
+
+public class AreaPerimeterTriangle {
+	
+	public static void area(int x,int y,int z) {
+		 
+		double number=x+y+z;
+		double s = number/2;
+		double squareRoot = Math.sqrt(number);
+		System.out.println("area of triangle with l: " + number + " = " + squareRoot);
+	}
+
+	public static void perimeter(int x,int y,int z) 
+	{
+		int peri_peri = z+y+z; 
+		System.out.println("perimeter is: "+peri_peri);
+	}
+	
+	public static void main(int a, int b, int c)
+	{
+		AreaPerimeterTriangle q1 = new AreaPerimeterTriangle();
+		int a;
+		int b;
+		int c;
+		q1.area(a, b, c);
+		q1.perimeter(a, b, c);
+	}
+	
+}
