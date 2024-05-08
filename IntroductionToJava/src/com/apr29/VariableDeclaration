@@ -1,0 +1,15 @@
+package com.apr29;
+
+public class VariableDeclaration {
+
+	public static void main(String[] args) {
+		
+		String name="Gaurav KADWADKAR";
+		String address="Mumbai";
+		int age=18;
+		
+		System.out.println(name+" " +address+ " " +age);
+		System.out.println("Name :"+name+"Address :"+address+"Age :"+age);
+	}
+
+}
