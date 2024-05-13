@@ -1,0 +1,27 @@
+package com.may13;
+abstract class Shape{
+	public abstract void area(int a,int b);
+	public void show() {
+		System.out.println("This is show method");
+	}
+}
+class Rectangle extends Shape{
+
+	@Override
+	public void area(int a, int b) {
+		super.show();
+		System.out.println("area of reactangle is:"+(a*b));
+		
+	}
+	
+}
+public class AbstractRevision {
+
+	public static void main(String[] args) {
+		Rectangle r=new Rectangle();
+		
+		r.area(10, 5);
+
+	}
+
+}
