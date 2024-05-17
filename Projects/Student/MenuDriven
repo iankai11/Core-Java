@@ -1,0 +1,27 @@
+package Student;
+
+import java.util.Scanner;
+
+class MenuDriven
+{
+	Scanner sc = new Scanner(System.in);
+	long id;
+	String fname;
+	String lname;
+	String eid;
+	long cno;
+	public int count = 0;
+	public void add()
+	{
+		System.out.println("enter student id : ");
+		id = sc.nextLong();
+		System.out.println("enter first name ");
+		fname = sc.next();
+		System.out.println("enter last name");
+		lname = sc.next();
+		System.out.println("enter email : ");
+		eid = sc.next();
+		System.out.println("enter contact : ");
+		cno = sc.nextLong();
+		count++;
+	}
