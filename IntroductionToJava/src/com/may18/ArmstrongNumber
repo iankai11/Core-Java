@@ -1,0 +1,54 @@
+package com.may18;
+
+import java.util.Scanner;
+
+public class ArmstrongNumber {
+	Scanner sc = new Scanner(System.in);
+	private int a;
+	public void addNumber()
+	{
+		System.out.println("enter number to be checked");
+		a = sc.nextInt();
+	}
+
+	public void check() 
+	{   int sum = 0;
+	    int sum1 = 0;
+		int z = 0;
+		int x=0;
+		int temp = a;
+		while(z!=0)
+		{
+			z = temp%10;
+			sum+=z*z*z;
+			temp = a/10;
+		}
+	  int armstrong = sum;
+	  System.out.println(armstrong);
+	   int temp1 = sum;
+	  
+	  while(x!=0)
+		{
+			x = temp1%10;
+			sum1+=x*x*x;
+			temp1 = x/10;
+		}
+	  System.out.println(sum1);
+	  if(armstrong==sum1)
+	  {
+		  System.out.println("its an armstrong number");
+	  }else
+		  System.out.println("its not an armstrong number");
+	  
+	}
+	
+	public static void main(String[] args)
+	
+	{
+		ArmstrongNumber q = new ArmstrongNumber();
+		q.addNumber();
+		q.check();
+		
+	}
+
+}
